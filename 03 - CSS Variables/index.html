@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Scoped CSS Variables and JS</title>
+  </head>
+
+  <body>
+    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+
+    <div class="controls">
+      <div class="item">
+        <label for="base">Base Color : </label>
+        <input id="base" type="color" name="base" value="#ffc600">
+      </div>
+
+      <div class="item">
+        <label for="spacing">Spacing : <span class='val'></span></label>
+        <input id="spacing" type="range" name="spacing" min="1" max="50" value="2" data-sizing="px">
+      </div>
+
+      <div class="item">
+        <label for="invert">Invert : <span class='val'></span></label>
+        <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+      </div>
+
+      <div class="item">
+        <label for="sepia">Sepia : <span class='val'></span></label>
+        <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+      </div>
+
+      <div class="item">
+        <label for="rotate">Rotate : <span class='val'></span></label>
+        <input id="rotate" type="range" name="rotate" min="0" max="180" value="0" data-sizing="deg">
+      </div>
+
+      <div class="item">
+        <label for="border">B-Radius : <span class='val'></span></label>
+        <input id="border" type="range" name="border" min="0" max="50" value="1" data-sizing="%">
+      </div>
+
+      <div class="item">
+        <label for="scale">Scale : <span class='val'></span></label>
+        <input id="scale" type="range" name="scale" min="0.3" max="0.8" step="0.1" value="0.8" data-sizing="">
+      </div>
+
+      <div class="item">
+        <label for="shadowX">ShadowX : <span class='val'></span></label>
+        <input id="shadowX" type="range" name="shadowX" min="0" max="30" value="1" data-sizing="px">
+      </div>
+
+      <div class="item">
+        <label for="shadowY">ShadowY : <span class='val'></span></label>
+        <input id="shadowY" type="range" name="shadowY" min="0" max="30" value="1" data-sizing="px">
+      </div>
+
+      <div class="item">
+        <label for="shadowB">ShadowB : <span class='val'></span></label>
+        <input id="shadowB" type="range" name="shadowB" min="0" max="15" value="1" data-sizing="px">
+      </div>
+
+    </div>
+
+    <img src="images/elephants.jpg">
+
+    <script src="main.js"></script>
+  </body>
+
+</html>

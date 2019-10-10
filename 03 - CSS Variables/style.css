@@ -1,0 +1,59 @@
+:root {
+  --base: #ffc600;
+  --spacing: 2px;
+  --invert: 0%;
+  --sepia: 0%;
+  --rotate: 0deg;
+  --border: 1%;
+  --scale: 0.8;
+  --shadowX: 1px;
+  --shadowY: 1px;
+  --shadowB: 1px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: invert(var(--invert)) sepia(var(--sepia)) drop-shadow(var(--shadowX) var(--shadowY) var(--shadowB) rgba(0,0,0,0.5));
+  transform: rotate(var(--rotate)) scale(var(--scale),var(--scale));
+  border-radius: var(--border);
+}
+
+.hl {
+  color: var(--base);
+}
+/*
+      misc styles, nothing to do with CSS variables
+    */
+
+body {
+  box-sizing: border-box;
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.controls {
+  width:80%;
+  margin: 25px auto 30px;;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  display: block;
+  padding: 6px;
+  width:44%
+}
+input {
+  width:90px;
+}
+
+label{
+  width:90px;
+}
